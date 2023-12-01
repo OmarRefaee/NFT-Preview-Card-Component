@@ -3,7 +3,7 @@
         height: 500px;
     }
 
-    main>img {
+    main>.main-img {
         width: 281px;
     }
 
@@ -31,7 +31,7 @@
         height: 527px;
     }
 
-    main>img {
+    main>.main-img {
         width: 290px;
     }
 
@@ -113,13 +113,59 @@ main {
     -o-border-radius: 15px;
 }
 
-main>img {
-    /* width: 281px; */
+main>.main-img {
+    /*width: 281px;
+    */
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
+    position: relative;
+    background: url("images/image-equilibrium.jpg");
+    aspect-ratio: 1;
+    background-size: contain;
+}
+
+main>.main-img::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: hsla(178, 100%, 50%, 50%);
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+    opacity: 0;
+    display: block;
+    transition: all 250ms ease;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+}
+
+main>.main-img:hover::before,
+main>.main-img:hover svg {
+    opacity: 1;
+}
+
+.main-img svg {
+    transition: all 250ms ease;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 .nft-name {
@@ -127,6 +173,12 @@ main>img {
     /* font-size: 22px; */
     font-weight: 600;
     /* margin: 23px 0 12px; */
+}
+
+.nft-name:hover,
+.nft-creator .name:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
 }
 
 .nft-caption {
