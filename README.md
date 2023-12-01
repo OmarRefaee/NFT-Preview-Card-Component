@@ -41,5 +41,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Omar Refaee](https://www.your-site.com)
+- Website - [Omar Refaee](https://github.com/OmarRefaee)
 - Frontend Mentor - [@OmarRefaee](https://www.frontendmentor.io/profile/omarrefaee)
