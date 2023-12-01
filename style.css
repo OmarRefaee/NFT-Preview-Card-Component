@@ -121,9 +121,10 @@ main>.main-img {
     -ms-border-radius: 8px;
     -o-border-radius: 8px;
     position: relative;
-    background: url("images/image-equilibrium.jpg");
+    background: url("/images/image-equilibrium.jpg");
     aspect-ratio: 1;
     background-size: contain;
+    cursor: pointer;
 }
 
 main>.main-img::before {
